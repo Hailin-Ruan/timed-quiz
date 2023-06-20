@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  gap: 50px; /* Add this line to create a gap between elements */
+}
+
+.highscore {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+.start {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(86, 2, 86);
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.start:hover {
+  background-color: palevioletred;
+}
+
+#introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.content {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  display: flex;
+  justify-content: center;
+}
+
+.content p {
+  text-align: center;
+}
+
+#quiz {
+  margin: 20px auto;
+  width: 500px;
+}
+
+.answer-button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(86, 2, 86);
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.answer-button:hover {
+  background-color: palevioletred;
+}
+
+#result {
+  display: none;
+  text-align: center;
+}
+
+#go-back-button,
+#clear-scores-button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(86, 2, 86);
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  width: 150px;
+}
+
+#highscores-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
