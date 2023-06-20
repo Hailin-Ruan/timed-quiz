@@ -15,4 +15,4 @@ This is a timed coding quiz with multiple-choice questions.
 
 ## Screenshot
 
-![alt text](codingquiz.png)
+![alt text](assets/images/quiz.png)
